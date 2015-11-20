@@ -386,4 +386,8 @@ a.gallery-item:hover{
 .s{
     padding-top: 30px;
 }
-@media (min-width: 768px) {}
+@media (max-width: 768px) {
+    .b{
+        text-align: center !important;
+    }
+}
