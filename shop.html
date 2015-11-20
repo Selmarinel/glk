@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery/jquery-1.11.1.min.js" lang="text/java" ></script>
+    <script src="js/jquery/jquery-2.1.3.min.js" lang="text/java" ></script>
+    <script src="js/bootstrap.min.js" lang="text/java" ></script>
+    <link href="/fonts/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/masonry.min.js" lang="text/java"></script>
+    <script src="js/imageloaded.pkgd.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+</head>
+<body>
+<div class="header>"></div>
+<div class="menu>"></div>
+
+<div class="container">
+    <div class="grid">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 grid-item">
+            <div class="text-center grid-text">
+                Нежность <b class="new">новинка</b>
+                <div class="graph g">Для дорогих мам</div>
+            </div>
+            <img src="img/masonry/7.jpg" class="">
+            <div class="price text-center">
+                <b class="money">900</b> <b class="currency">грн.</b>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 grid-item">
+            <div class="text-center grid-text">
+                Нежность <b class="new a">новинка</b>
+                <div class="graph g">Любимой</div>
+            </div>
+            <img src="img/masonry/8.jpg" class="">
+            <div class="price text-center">
+                <b class="money">1900</b> <b class="currency">грн.</b>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 grid-item">
+            <div class="text-center grid-text">
+                Нежность <b class="new sale">скидка</b>
+                <div class="graph g">Любимому</div>
+            </div>
+            <img src="img/masonry/9.jpg" class="">
+            <div class="price text-center">
+                <b class="money">1200</b> <b class="currency">грн.</b>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 grid-item">
+            <div class="text-center grid-text">
+                Нежность
+                <div class="graph g">просто</div>
+            </div>
+            <img src="img/masonry/10.jpg" class="">
+            <div class="price text-center">
+                <b class="money">2312</b> <b class="currency">грн.</b>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer"></div>
+
+</body>
+<script>
+    $r = _.template(block/header.html);
+
+    $(document).ready(function(){
+        $('.carousel').carousel()
+        $('.menu').append($r);
+        // init Masonry
+        var $grid = $('.grid').masonry({
+            // options...
+        });
+        // layout Masonry after each image loads
+        $grid.imagesLoaded().progress( function() {
+            $grid.masonry('layout');
+        });
+    });
+</script>
+</html>

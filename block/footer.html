@@ -1,0 +1,88 @@
+<!-- ABOUT -->
+<div class="one_click">
+    <div class="text-center">
+        <h4>Вы знаете что? Товары можно оформить в <a href="#" class="">один клик.</a></h4>
+    </div>
+</div>
+<div class="clearfix"></div>
+<!-- Footer -->
+<div id="footer">
+    <div class="row">
+        <footer>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="title">© ИП «Lucy Polly»</div>
+                <div class="graph">График работы call-центра</div>
+                <div class="time">8:00 - 9:00</div>
+                <div class="graph g bottom col-lg-offset-0">
+                    Вы также можете перейти,<br>
+                    на <a href="#" class="nav-link-r">мобильную версию сайта.</a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                <div class="title">Управление</div>
+                <div class="graph">
+                    <ul class="list-unstyled">
+                        <li class="list-item"><a href="#" class="nav-link-r">Как оформить заказ</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r">Условие доставки</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r">Возврат</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r">Оферта</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r">Программа лояльности</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                <div class="title">О нас</div>
+                <div class="graph">
+                    <ul class="list-unstyled">
+                        <li class="list-item"><a href="#" class="nav-link-r">О нас</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r">Контакты</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r"><i class= "fa fa-twitter"></i> Мы в твитере</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r">Сотрудничество с нами</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r">Условия пользования сайтом</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                <div class="title">Продажи</div>
+                <div class="graph">
+                    <ul class="list-unstyled">
+                        <li class="list-item"><a href="#" class="nav-link-r">Киев</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r">Ташкент</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                <div class="title">Способы оплаты</div>
+                <div class="graph">
+                    <img src="img/vs2.png" class="col-lg-5" width="60">
+                    <img src="img/mc.png" class="col-lg-5" width="60">
+                </div>
+                <div class="copyright text-right">
+                    Сделано в <a href="#" class="nav-link-r">John Larckin|Vergo</a>
+                </div>
+                <div class="graph g text-right">
+                    Вы можете оплатить покупки наличными при получении,
+                    либо выбрать другой способ оплаты
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+</body>
+<script>
+    $(document).ready(function(){
+        $('.carousel').carousel()
+
+        // init Masonry
+        var $grid = $('.grid').masonry({
+            // options...
+        });
+        // layout Masonry after each image loads
+        $grid.imagesLoaded().progress( function() {
+            $grid.masonry('layout');
+        });
+    });
+
+</script>
+</html>

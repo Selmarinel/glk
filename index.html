@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery/jquery-1.11.1.min.js" lang="text/java" ></script>
+    <script src="js/jquery/jquery-2.1.3.min.js" lang="text/java" ></script>
+    <script src="js/bootstrap.min.js" lang="text/java" ></script>
+    <link href="/fonts/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/masonry.min.js" lang="text/java"></script>
+    <script src="js/imageloaded.pkgd.min.js"></script>
+</head>
+<body>
+<!-- HEADER -->
+<header class="navbar navbar-static-top">
+    <div class="container-fluid" width = "100%">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="col-lg-4 menu_item text-center navbar-btn"><a href="#" class="nav-item">Для него</a></div>
+                <div class="col-lg-4 menu_item text-center navbar-btn"><a href="#" class="nav-item">Для нее</a></div>
+                <div class="col-lg-4 menu_item text-center navbar-btn"><a href="#" class="nav-item">Для семьи</a></div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="text-center">
+                    <a href = "index.html"><img src="img/logo.png"/></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="col-lg-6 menu_item text-center navbar-btn"><a href="#" class="nav-link-r">0(44) <b>199 0000</b></a></div>
+                <div class="col-lg-2 menu_item text-center navbar-btn"><a href="#" class="nav-link-r"><b>Вход</b></a></div>
+                <div class="col-lg-4 menu_item text-right navbar-btn"><a href="#" class="nav-link-r">Корзина</a></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- MENU -->
+<div class="menu_block">
+    <div class="">
+        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 row">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 text-center"><a href="g.php" class="nav-link">просто так</a></div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 text-center"><a href="shop.html" class="nav-link">хочу домой</a></div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 text-center"><a href="#" class="nav-link">хочу в офис</a></div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 text-center"><a href="#" class="nav-link">в подарок</a></div>
+            <div class="col-lg-2 col-md-12 col-sm-6 col-xs-6 text-center"><a href="#" class="nav-link">маме</a></div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-right">
+            <div class="col-lg-11 col-md-10 col-sm-11 col-xs-10"><input type="text" class="line"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><i class="glyphicon glyphicon-search"></i></div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+<div class="main">
+    <!-- Carousel-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/6.png" alt="1" class="img-responsive center img-slider">
+                <div class="carousel-caption">
+                    <div class="block">
+                        <div class="block block-header">
+                            <h2 class="">Замечательный подарок <br/>для ваших близких</h2>
+                        </div>
+                        <div class="block block-body">
+                            <small class="text-muted">*весь октябрь скидки для наших близких</small>
+                        </div>
+                    <div class="block block-footer">
+                        <span class="btn btn-primary btn-r">С удовольствием!</span>
+                        <span class="btn btn-default btn-r">узнать больше</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/2.jpg" alt="2" class="img-responsive center img-slider">
+                <div class="carousel-caption">
+                    <h3 class="text-danger">Flowers</h3>
+                    <p>Beatiful flowers in Kolymbari, Crete.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/3.png" alt="3" class="img-responsive center img-slider">
+                <div class="carousel-caption">
+                    <h3>Flowers</h3>
+                    <p>Beatiful flowers in Kolymbari, Crete.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/5.jpg" alt="4" class="img-responsive center img-slider">
+                <div class="carousel-caption">
+                    <h3>Flowers</h3>
+                    <p>Beatiful flowers in Kolymbari, Crete.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </a>
+    </div>
+    <div class="clearfix"></div>
+
+    <!-- MASORY -->
+    <div class="gallery container">
+        <div class="grid">
+            <div class="grid-item random">
+                <img src="img/masonry/1.jpg" class="">
+                <div class="text-center grid-text">Для самых лучших.</div>
+            </div>
+            <div class="grid-item a1 random">
+                <div class="text-center grid-text">Для любимой.</div>
+                <img src="img/masonry/2.jpg" class="">
+            </div>
+            <div class="grid-item random">
+                <div class="text-center grid-text">Большим детям.</div>
+                <img src="img/masonry/3.jpg" class="">
+            </div>
+            <div class="grid-item a3 random">
+                <div class="text-center grid-text">Нравиться моей маме.</div>
+                <img src="img/masonry/4.jpg" class="">
+            </div>
+            <div class="grid-item a2 random">
+                <img src="img/masonry/6.jpg" class="">
+                <div class="text-center grid-text">Любимому.</div>
+            </div>
+            <div class="grid-item random">
+                <div class="text-center grid-text">Для вашего багета.</div>
+                <img src="img/masonry/5.jpg" class="">
+            </div>
+            <div class="grid-item random">
+                <div class="text-center grid-text">
+                    Нежность
+                    <div class="graph g">Для дорогих мам</div>
+                </div>
+                <img src="img/3.png" class="">
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 grid-item">
+                <a href="item.php" class="gallery-item">
+                    <div class="text-center grid-text">
+                        Нежность
+                        <div class="graph g">Для дорогих мам</div>
+                    </div>
+                    <img src="img/masonry/7.jpg" class="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 grid-item">
+                <div class="text-center grid-text">
+                    Свобода
+                    <div class="graph g">Для дорогих мам</div>
+                </div>
+                <img src="img/masonry/8.jpg" class="">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 grid-item">
+                <div class="text-center grid-text">
+                    Зеркало
+                    <div class="graph g">Для дорогих мам</div>
+                </div>
+                <img src="img/masonry/9.jpg" class="">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 grid-item">
+                <div class="text-center grid-text">
+                    Озорник
+                    <div class="graph g">Для дорогих мам</div>
+                </div>
+                <img src="img/masonry/10.jpg" class="">
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <!-- bottom -->
+    <div class="add-panel">
+        <div class="text-center">
+            <div class="col-lg-5">
+                <div class="">
+                    <h1>Скидки в подарок!</h1>
+                    <h5>За подписку на наши новости.</h5>
+                </div>
+                <div class="k">
+                    <span class="btn btn-primary btn-t">С удовольствием!</span><br>
+                </div>
+                <small class="accepted">Соглашаясь вы принимаете <a href="#" class="confidence  ">политику конфидециальности</a></small>
+            </div>
+            <div class="col-lg-7">
+                <div class="col-lg-4">
+                    <h2>Большим детям</h2>
+                    <h5>Душа моя озарена неземной радостью, как эти чудесныею</h5>
+                    <div class="k"><span class="btn btn-default">узнать больше</span></div>
+                </div>
+                <div class="col-lg-8">
+                    <img class="bot-img" src="img/7.png">
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="clearfix"></div>
+</div>
+
+<!-- ABOUT -->
+<div class="one_click">
+    <div class="text-center">
+        <h4>Вы знаете что? Товары можно оформить в <a href="#" class="">один клик.</a></h4>
+    </div>
+</div>
+<div class="clearfix"></div>
+<!-- Footer -->
+<div id="footer">
+    <div class="row">
+        <footer>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="title">© ИП «Lucy Polly»</div>
+                <div class="graph">График работы call-центра</div>
+                <div class="time">8:00 - 9:00</div>
+                <div class="graph g col-lg-offset-0">
+                    Вы также можете перейти,<br>
+                    на <a href="#" class="nav-link-r">мобильную версию сайта.</a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                <div class="title">Управление</div>
+                <div class="graph">
+                    <ul class="list-unstyled">
+                        <li class="list-item"><a href="#" class="nav-link-r">Как оформить заказ</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r">Условие доставки</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r">Возврат</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r">Оферта</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r">Программа лояльности</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                <div class="title">О нас</div>
+                <div class="graph">
+                    <ul class="list-unstyled">
+                        <li class="list-item"><a href="#" class="nav-link-r">О нас</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r">Контакты</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r"><i class= "fa fa-twitter"></i> Мы в твитере</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r">Сотрудничество с нами</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r">Условия пользования сайтом</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                <div class="title">Продажи</div>
+                <div class="graph">
+                    <ul class="list-unstyled">
+                        <li class="list-item"><a href="#" class="nav-link-r">Киев</a></li>
+                        <li class="list-item"><a href="#" class="nav-link-r">Ташкент</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                <div class="title">Способы оплаты</div>
+                <div class="graph">
+                    <img src="img/vs2.png" class="col-lg-5" width="60">
+                    <img src="img/mc.png" class="col-lg-5" width="60">
+                </div>
+                <div class="copyright text-right">
+                    Сделано в <a href="#" class="nav-link-r">John Larckin|Vergo</a>
+                </div>
+                <div class="graph g text-right">
+                    Вы можете оплатить покупки наличными при получении,
+                    либо выбрать другой способ оплаты
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+</body>
+<script>
+    $(document).ready(function(){
+        $('.carousel').carousel()
+
+        // init Masonry
+        var $grid = $('.grid').masonry({
+            // options...
+        });
+        // layout Masonry after each image loads
+        $grid.imagesLoaded().progress( function() {
+            $grid.masonry('layout');
+        });
+    });
+
+</script>
+</html>
